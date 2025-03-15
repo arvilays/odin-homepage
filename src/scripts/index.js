@@ -6,7 +6,7 @@ const main = () => {};
 
 main();
 
-/* 
+/*
  * Use the command below to reinstall packages:
  * npm run reinstall
  */
