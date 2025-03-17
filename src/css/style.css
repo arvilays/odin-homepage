@@ -2,7 +2,6 @@
 /* fonts: "playfair display" "roboto" */
 
 body {
-  
   font-family: "roboto";
   font-size: 16px;
 }
@@ -21,15 +20,28 @@ img {
   gap: 15px;
 }
 
+.socials-icon {
+  transition: filter 0.25s;
+}
+
+.socials-icon:hover {
+  cursor: pointer;
+  filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(142deg) brightness(92%) contrast(93%);
+}
+
 /*##############################
 ||           HEADER           ||
 ##############################*/
 @media only screen and (min-width: 0px) {
   header {
-    background-image: linear-gradient(165deg, hsl(192, 91%, 36%) 20%, #F4F4F4 calc(20% + 2px));
+    z-index: 1;
+    background-image: linear-gradient(165deg, hsl(204, 80%, 42%) 20%, white calc(20% + 2px));
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px;
+    box-shadow: 0px 5px 10px grey;
   }
 
   .header-intro {
@@ -40,6 +52,10 @@ img {
     margin-bottom: -85px;
   }
 
+  .header-image {
+    border: 8px double black;
+  }
+
   .header-image > img {
     width: revert;
   }
@@ -47,8 +63,11 @@ img {
   .header-name {
     position: relative;
     bottom: 100px;
-    color: white;
+    font-family: 'playfair display';
     font-size: 4em;
+    font-weight: 800;
+    color: white;
+    filter: drop-shadow(0px 0px 10px black);
   }
 
   .header-about {
@@ -60,8 +79,12 @@ img {
   }
 
   .header-title {
+    font-family: 'playfair display';
     font-size: 3em;
+    font-weight: 800;
+    color: hsl(40, 78%, 55%);
     text-align: center;
+    padding: 10px;
   }
 
   .header-description {
@@ -70,19 +93,37 @@ img {
 
   .signature {
     display: block;
+    color: hsl(204, 80%, 42%);
+    font-family: 'playfair display';
+    font-size: 1.25em;
     text-align: right;
+    margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 800px) {
   header {
-    
+    flex-direction: row;
+  }
+
+  .header-about {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 10px grey;
+  }
+
+  .socials {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   header {
     
+  }
+
+  .socials {
+    display: flex;
   }
 }
 
@@ -101,7 +142,17 @@ img {
   }
 
   .main-title {
+    font-family: 'playfair display';
     font-size: 3em;
+    font-weight: 800;
+    color: darkred;
+  }
+
+  .main-description {
+    text-align: center;
+    max-width: 700px;
+    margin-top: -30px;
+    margin-bottom: 15px;
   }
 
   .main-wanted {
@@ -123,7 +174,7 @@ img {
 
 @media only screen and (min-width: 800px) {
   main {
-    background-color: green;
+
   }
 
   .main-wanted {
@@ -134,7 +185,7 @@ img {
 
 @media only screen and (min-width: 1200px) {
   main {
-    background-color: blue;
+   
   }
 
   .main-wanted {
@@ -148,9 +199,11 @@ img {
 ##############################*/
 @media only screen and (min-width: 0px) {
   footer {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     padding: 30px 30px 0px;
+    box-shadow: 0px -5px 10px grey;
   }
 
   .footer-about {
@@ -160,7 +213,10 @@ img {
   }
 
   .footer-title {
+    font-family: 'playfair display';
     font-size: 3em;
+    font-weight: 800;
+    color: hsl(204, 80%, 42%);
     text-align: center;
   }
 
@@ -180,6 +236,14 @@ img {
 
   .footer-image > img {
     width: revert;
+  }
+
+  .footer-about > .socials {
+    margin: 0 auto;
+  }
+
+  .footer-about > .socials > img {
+    width: 50px;
   }
 }
 
