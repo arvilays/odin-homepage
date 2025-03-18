@@ -129,14 +129,6 @@ img {
 }
 
 @media only screen and (min-width: 1400px) {
-  header {
-    background-image: linear-gradient(
-      165deg,
-      hsl(204, 80%, 42%) 20%,
-      white calc(20% + 2px)
-    );
-  }
-
   .header-container {
     display: flex;
     align-items: center;
