@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* fonts: "playfair display" "roboto" */
 
 body {
@@ -26,7 +26,8 @@ img {
 
 .socials-icon:hover {
   cursor: pointer;
-  filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(142deg) brightness(92%) contrast(93%);
+  filter: invert(54%) sepia(0%) saturate(0%) hue-rotate(142deg) brightness(92%)
+    contrast(93%);
 }
 
 /*##############################
@@ -39,7 +40,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(165deg, hsl(204, 80%, 42%) 20%, white calc(20% + 2px));
+    background-image: linear-gradient(
+      165deg,
+      hsl(204, 80%, 42%) 20%,
+      white calc(20% + 2px)
+    );
     padding: 30px;
     box-shadow: 0px 5px 10px grey;
   }
@@ -54,7 +59,7 @@ img {
     position: relative;
     bottom: 120px;
     color: white;
-    font-family: 'playfair display';
+    font-family: "playfair display";
     font-size: 4em;
     font-weight: 800;
     text-align: center;
@@ -63,7 +68,7 @@ img {
   }
 
   .header-title {
-    font-family: 'playfair display';
+    font-family: "playfair display";
     font-size: 3em;
     font-weight: 800;
     color: hsl(40, 78%, 55%);
@@ -75,7 +80,7 @@ img {
   .signature {
     display: block;
     color: hsl(204, 80%, 42%);
-    font-family: 'playfair display';
+    font-family: "playfair display";
     font-size: 1.25em;
     text-align: right;
     margin-bottom: 20px;
@@ -89,7 +94,11 @@ img {
 @media only screen and (min-width: 1050px) {
   header {
     padding: 100px;
-    background-image: linear-gradient(165deg, hsl(204, 80%, 42%) 45%, white calc(45% + 2px));
+    background-image: linear-gradient(
+      165deg,
+      hsl(204, 80%, 42%) 45%,
+      white calc(45% + 2px)
+    );
   }
 
   .header-intro {
@@ -121,7 +130,11 @@ img {
 
 @media only screen and (min-width: 1400px) {
   header {
-    background-image: linear-gradient(165deg, hsl(204, 80%, 42%) 20%, white calc(20% + 2px));
+    background-image: linear-gradient(
+      165deg,
+      hsl(204, 80%, 42%) 20%,
+      white calc(20% + 2px)
+    );
   }
 
   .header-container {
@@ -152,7 +165,7 @@ img {
     display: flex;
     justify-content: end;
   }
-}  
+}
 
 /*##############################
 ||            MAIN            ||
@@ -170,7 +183,7 @@ img {
   }
 
   .main-title {
-    font-family: 'playfair display';
+    font-family: "playfair display";
     font-size: 3em;
     font-weight: 800;
     color: darkred;
@@ -202,10 +215,6 @@ img {
 }
 
 @media only screen and (min-width: 1050px) {
-  main {
-
-  }
-
   .main-wanted {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -213,10 +222,6 @@ img {
 }
 
 @media only screen and (min-width: 1400px) {
-  main {
-   
-  }
-
   .main-wanted {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -244,7 +249,7 @@ img {
   }
 
   .footer-title {
-    font-family: 'playfair display';
+    font-family: "playfair display";
     font-size: 3em;
     font-weight: 800;
     color: hsl(204, 80%, 42%);
@@ -259,7 +264,8 @@ img {
     white-space: pre-line;
   }
 
-  .footer-phone, .footer-mail {
+  .footer-phone,
+  .footer-mail {
     display: flex;
     align-items: center;
     gap: 10px;
